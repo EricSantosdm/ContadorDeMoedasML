@@ -65,4 +65,4 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 
 ## Agradecimentos
 
-Agradecemos a professora e colegas que forneceram suporte e feedback durante o desenvolvimento deste projeto.
+Agradecemos a professora [Rosana Cibely](https://github.com/roscibely) e colegas que forneceram suporte e feedback durante o desenvolvimento deste projeto.
