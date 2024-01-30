@@ -21,13 +21,13 @@ Este é um sistema de identificação de moedas desenvolvido em Python utilizand
 1. Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/EricSantosdm/ContadorDeMoedasM.git
+git clone https://github.com/EricSantosdm/ContadorDeMoedasML.git
 ```
 
 2. Navegue até o diretório do projeto:
 
 ```bash
-cd sistema-identificacao-moedas
+cd ContadorDeMoedasML
 ```
 
 3. Instale as dependências usando pip:
