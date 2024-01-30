@@ -1,28 +1,33 @@
-# Sistema de Detecção de Danos em Veículos
+# Sistema de Identificação de Moedas com OpenCV
 
-Este é um sistema de detecção de danos em veículos desenvolvido em Python como parte dos requisitos da disciplina de Tópicos Especiais de Engenharia de Software I. O sistema utiliza técnicas de Machine Learning para analisar imagens de veículos e identificar possíveis danos.
+Este é um sistema de identificação de moedas desenvolvido em Python utilizando OpenCV. O sistema utiliza técnicas de Processamento de Imagem e Machine Learning para identificar diferentes tipos de moedas em uma imagem.
 
 ## Funcionalidades Principais
 
-- **Detecção de Danos**: O sistema é capaz de analisar imagens de veículos e identificar áreas com possíveis danos, como arranhões, amassados ​​ou rachaduras.
-  
+- **Identificação de Moedas**: O sistema é capaz de analisar imagens contendo moedas e identificar os tipos de moedas presentes, como moedas de 1 real, 50 centavos, etc.
+
+- **Processamento de Imagem**: Utilizando OpenCV, o sistema realiza o pré-processamento das imagens, destacando características únicas das moedas para facilitar a identificação.
+
+- **Modelo de Machine Learning**: O sistema utiliza um modelo de Machine Learning treinado previamente para reconhecimento de moedas. Este modelo foi treinado com uma variedade de imagens de diferentes tipos de moedas.
+
 ## Requisitos de Sistema
 
 - Python 3.x
-- Bibliotecas Python: NumPy, OpenCV, TensorFlow, etc. (detalhes podem ser encontrados no arquivo requirements.txt)
+- OpenCV
+- Bibliotecas Python: NumPy, scikit-learn, etc. (detalhes podem ser encontrados no arquivo requirements.txt)
 
 ## Instalação
 
 1. Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/EricSantosdm/DeteccaoDeDanos.git
+git clone https://github.com/EricSantosdm/ContadorDeMoedasM.git
 ```
 
 2. Navegue até o diretório do projeto:
 
 ```bash
-cd DeteccaoDeDanos
+cd sistema-identificacao-moedas
 ```
 
 3. Instale as dependências usando pip:
@@ -39,25 +44,15 @@ pip install -r requirements.txt
 python main.py
 ```
 
-2. A interface do sistema será iniciada. Carregue uma imagem de veículo que deseja analisar.
+2. Carregue uma imagem contendo moedas que deseja analisar.
 
-3. Aguarde o processamento. O sistema exibirá os resultados da detecção de danos na imagem carregada.
+3. Aguarde o processamento. O sistema identificará as moedas presentes na imagem e exibirá os resultados.
 
-4. Se desejar, forneça feedback sobre as detecções realizadas para melhorar a precisão do sistema no futuro.
-
-5. Você também pode explorar outras funcionalidades disponíveis na interface.
+4. Você também pode explorar outras funcionalidades disponíveis na interface, como visualizar as regiões de interesse identificadas nas moedas.
 
 ## Contribuição
 
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, por favor, abra uma issue para discutir as mudanças propostas ou envie um pull request.
-
-## Autores
-
-Este projeto foi desenvolvido como parte dos requisitos da disciplina de Tópicos Especiais de Engenharia de Software I pelos seguintes alunos:
-
-- [Bruno Wellington](https://github.com/brunowellington)
-- [Carlos Daniel](https://github.com/DanielFernandess)
-- [Eric Santos](https://github.com/EricSantosdm)
 
 ## Licença
 
@@ -65,4 +60,7 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 
 ## Agradecimentos
 
-Agradecemos a professora [Rosana Cibely](https://github.com/roscibely) e colegas que forneceram suporte e feedback durante o desenvolvimento deste projeto.
+Agradecemos aos desenvolvedores e à comunidade de código aberto que contribuíram com ferramentas como OpenCV e scikit-learn, que tornaram possível o desenvolvimento deste sistema de identificação de moedas.
+```
+
+Esse README fornece uma visão geral do sistema, instruções de instalação e uso, bem como informações sobre contribuição, licença e agradecimentos. Você pode ajustar e expandir conforme necessário para seu projeto específico.
