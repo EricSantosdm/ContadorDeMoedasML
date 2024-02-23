@@ -9,7 +9,7 @@ video = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 
 model = load_model('Keras_model.h5',compile=False)
 data = np.ndarray(shape=(1,224,224,3),dtype=np.float32)
-classes = ["1 real","25 cent","50 cent"]
+classes = ["1 real","25 cent","50 cent", "10 cent", "5 cent"]
 
 def preProcess(img):
     imgPre = cv2.GaussianBlur(img,(5,5),3)
@@ -28,9 +28,7 @@ def DetectarMoeda(img):
     index = np.argmax(prediction)
     percent = prediction[0][index]
     classe = classes[index]
-    return classe,percent
-
-
+    return classe, percent
 
 while True:
     _,img = video.read()
@@ -49,8 +47,10 @@ while True:
             if conf >0.7:
                 cv2.putText(img,str(classe),(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),2)
                 if classe == '1 real': qtd+=1
-                if classe == '25 cent': qtd += 0.25
-                if classe == '50 cent': qtd += 0.5
+                elif classe == '25 cent': qtd += 0.25
+                elif classe == '50 cent': qtd += 0.5
+                elif classe == '10 cent': qtd += 0.10
+                elif classe == '5 cent': qtd += 0.05
 
     cv2.rectangle(img,(430,30),(600,80),(0,0,255),-1)
     cv2.putText(img,f'R$ {qtd}',(440,67),cv2.FONT_HERSHEY_SIMPLEX,1.2,(255,255,255),2)
