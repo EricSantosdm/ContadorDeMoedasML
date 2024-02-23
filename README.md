@@ -62,5 +62,3 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 
 Agradecemos aos desenvolvedores e à comunidade de código aberto que contribuíram com ferramentas como OpenCV e scikit-learn, que tornaram possível o desenvolvimento deste sistema de identificação de moedas.
 ```
-
-Esse README fornece uma visão geral do sistema, instruções de instalação e uso, bem como informações sobre contribuição, licença e agradecimentos. Você pode ajustar e expandir conforme necessário para seu projeto específico.
